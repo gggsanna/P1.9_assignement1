@@ -2,8 +2,17 @@ import sys
 import numpy as np
 import matplotlib.pyplot as plt
 
-available_functions={ 1: ("x -> x", lambda x: x)
+available_functions={ 1: ("x -> x", lambda x: x),
                       }
+
+# print Usage if no input is provided
+usage_message="Usage: python " + str(sys.argv[0]) + " <n> \n" \
+             + "\"n\" is an integer. The function corresponding to it is:"
+if(len(sys.argv) == 1):
+    print usage_message
+    for key in available_functions:
+        print str(key) + ": " + available_functions[key][0]
+    sys.exit()
 
 # set f according to input
 f = available_functions[int(sys.argv[1])][1]
