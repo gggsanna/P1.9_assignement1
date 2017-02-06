@@ -3,6 +3,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 available_functions={ 1: ("x -> x", lambda x: x),
+                      2: ("x -> exp(x)", lambda x: np.exp(x)),
+                      3: ("x -> sqrt(|x|)", lambda x: np.sqrt(abs(x)))
                       }
 
 # print Usage if no input is provided
