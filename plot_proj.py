@@ -2,7 +2,9 @@ import sys
 import numpy as np
 import matplotlib.pyplot as plt
 
-available_functions={ 1: ("x -> x", lambda x: x)
+available_functions={ 1: ("x -> x", lambda x: x),
+                      2: ("x -> x^2", lambda x: x*x),
+                      3: ("x -> x^3", lambda x: x*x*x)
                       }
 
 # set f according to input
