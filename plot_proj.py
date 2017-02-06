@@ -7,7 +7,9 @@ available_functions={ 1: ("x -> x", lambda x: x),
                       3: ("x -> x^3", lambda x: x*x*x),
                       4: ("x -> sin(x)", lambda x: np.sin(x)),
                       5: ("x -> cos(x)", lambda x: np.cos(x)),
-                      6: ("x -> tan(x)", lambda x: np.tan(x))
+                      6: ("x -> tan(x)", lambda x: np.tan(x)),
+                      7: ("x -> exp(x)", lambda x: np.exp(x)),
+                      8: ("x -> sqrt(|x|)", lambda x: np.sqrt(abs(x)))
                       }
 
 # print Usage if no input is provided
