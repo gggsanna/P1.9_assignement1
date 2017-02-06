@@ -1,5 +1,6 @@
 import sys
 import numpy as np
+import matplotlib.pyplot as plt
 
 available_functions={ 1: ("x -> x", lambda x: x)
                       }
@@ -21,4 +22,8 @@ xval=np.linspace(start,end,nsteps)
 yval=f(xval)
 
 # Test creation of xval and yval
-print xval[10:20], yval[10:20]
+# print xval[10:20], yval[10:20]
+
+# plot function
+plt.plot(xval,yval)
+plt.show()
