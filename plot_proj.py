@@ -4,7 +4,10 @@ import matplotlib.pyplot as plt
 
 available_functions={ 1: ("x -> x", lambda x: x),
                       2: ("x -> x^2", lambda x: x*x),
-                      3: ("x -> x^3", lambda x: x*x*x)
+                      3: ("x -> x^3", lambda x: x*x*x),
+                      4: ("x -> sin(x)", lambda x: np.sin(x)),
+                      5: ("x -> cos(x)", lambda x: np.cos(x)),
+                      6: ("x -> tan(x)", lambda x: np.tan(x))
                       }
 
 # print Usage if no input is provided
