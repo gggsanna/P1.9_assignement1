@@ -2,7 +2,10 @@ import sys
 import numpy as np
 import matplotlib.pyplot as plt
 
-available_functions={ 1: ("x -> x", lambda x: x)
+available_functions={ 1: ("x -> x", lambda x: x),
+                      2: ("x -> sin(x)", lambda x: np.sin(x)),
+                      3: ("x -> cos(x)", lambda x: np.cos(x)),
+                      4: ("x -> tan(x)", lambda x: np.tan(x))
                       }
 
 # set f according to input
