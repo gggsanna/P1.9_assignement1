@@ -22,8 +22,8 @@ f = available_functions[int(sys.argv[1])][1]
 # print "The identity function in " + str(test_val) + " is: " + str(f(10))
 
 # setup x and y axes
-start=-5.0
-end=5.0
+start=-3.0
+end=3.0
 interval=0.1
 nsteps=(end-start + 0.0)/interval + 1
 # abs((nsteps-1)*interval-(end-start))<tol
